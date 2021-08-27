@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+paho-mqtt = "*"
+websockets = "*"
+
+[dev-packages]
+pytest = "*"
+pytest-watch = "*"
+pytest-asyncio = "*"
+anyio = "*"
+
+[requires]
+python_version = "3.9"
+
+[scripts]
+"test" = "pytest -v"
