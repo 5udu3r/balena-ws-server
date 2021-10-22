@@ -1,0 +1,28 @@
+name: ws-server
+description: >-
+  Accepts a binary websocket message (0/1), passes it on as MQTT event
+version: 0.1.0
+type: sw.application
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: 'https://github.com/builder555/balena-ws-server'
+  logo:
+    type: blob.asset
+    data:
+      url: 'https://raw.githubusercontent.com/builder555/balena-ws-server/master/logo.png'
+data:
+  defaultDeviceType: raspberrypi3
+  supportedDeviceTypes:
+    - raspberry-pi
+    - raspberry-pi2
+    - raspberrypi3
+    - raspberrypi3-64
+    - raspberrypi4-64
+    - raspberrypi400-64
+    - nanopi-neo-air
+    - fincm3
+    - intel-nuc
+    - jetson-nano
+    - beaglebone-black
